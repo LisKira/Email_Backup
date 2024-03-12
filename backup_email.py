@@ -11,7 +11,7 @@ subject = "System Backup"
 body = "Backup for Kali machine."
 to_email = "example@example.com"
 from_email = "example@example.com"
-password = "Password for sender Email"
+password = "Password for from_email"
 
 def create_backup():
     # Create a temporary directory for backup
