@@ -50,7 +50,8 @@ def send_email(subject, body, to_email, from_email, password, attachment=None):
                 part.add_header('Content-Disposition', f'attachment; filename="{os.path.basename(attachment)}"')
                 msg.attach(part)
 
-        server = smtplib.SMTP('smtp.gmail.com', 587)
+        # Pick the smtp server and port number
+        server = smtplib.SMTP('smtp.example.com', port #)
         server.starttls()
         server.login(from_email, password)
         text = msg.as_string()
